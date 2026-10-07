@@ -1,0 +1,100 @@
+[
+  {
+    "id": 1,
+    "sku": "TSHIRT-BLK-01",
+    "name": "Classic Black T-Shirt",
+    "category": "Tops",
+    "description": "Essential black cotton t-shirt with a modern, clean fit suitable for everyday wear.",
+    "price": 24.99,
+    "currency": "USD",
+    "images": {
+      "front": "public/tshirt_front.jpg",
+      "detail": "public/tshirt_detail.jpg",
+      "folded": "public/tshirt_folded.jpg"
+    }
+  },
+  {
+    "id": 2,
+    "sku": "CAP-BLK-01",
+    "name": "Minimalist Black Cap",
+    "category": "Accessories",
+    "description": "Adjustable black baseball cap made from durable cotton twill.",
+    "price": 19.99,
+    "currency": "USD",
+    "images": {
+      "front": "public/cap_front.jpg",
+      "detail": "public/cap_detail.jpg",
+      "folded": "public/cap_back.jpg"
+    }
+  },
+  {
+    "id": 3,
+    "sku": "HOODIE-BLK-01",
+    "name": "Classic Black Hoodie",
+    "category": "Tops",
+    "description": "Classic black hoodie made from soft cotton blend with a comfortable fit.",
+    "price": 34.99,
+    "currency": "USD",
+    "images": {
+      "front": "public/hoodie_top.jpg",
+      "folded": "public/hoodie_folded.jpg",
+      "detail": "public/hoodie_detail.jpg"
+    }
+  },
+  {
+    "id": 4,
+    "sku": "SOCK-BLK-01",
+    "name": "Cotton Crew Socks Set",
+    "category": "Accessories",
+    "description": "Comfortable, breathable black cotton crew socks with ribbed cuffs.",
+    "price": 12.99,
+    "currency": "USD",
+    "images": {
+      "front": "public/socks_side.jpg",
+      "detail": "public/socks_detail.jpg",
+      "folded": "public/socks_folded.jpg"
+    }
+  },
+  {
+    "id": 5,
+    "sku": "JCKT-BLK-01",
+    "name": "Hooded Technical Jacket",
+    "category": "Outerwear",
+    "description": "All-weather hooded black jacket featuring water-resistant fabric and full-zip closure.",
+    "price": 119.99,
+    "currency": "USD",
+    "images": {
+      "front": "public/jacket_front.jpg",
+      "detail": "public/public/jacket_detail.jpg",
+      "folded": "public/jacket_folded.jpg"
+    }
+  },
+  {
+    "id": 6,
+    "sku": "PNT-BLK-01",
+    "name": "Slim Fit Black Chinos",
+    "category": "Bottoms",
+    "description": "Versatile black chino pants crafted from stretch-cotton for maximum comfort.",
+    "price": 59.99,
+    "currency": "USD",
+    "images": {
+      "front": "public/pants_front.jpg",
+      "detail": "public/pants_detail.jpg",
+      "folded": "public/pants_folded.jpg"
+    }
+  },
+  {
+    "id": 7,
+    "sku": "BLZ-BLK-01",
+    "name": "Tailored Black Blazer",
+    "category": "Outerwear",
+    "description": "Classic single-breasted black blazer suitable for smart-casual and formal occasions.",
+    "price": 149.99,
+    "currency": "USD",
+    "images": {
+      "front": "public/blazer_front.jpg",
+      "detail": "public/blazer_detail.jpg",
+      "folded": "public/blazer_folded.jpg"
+    }
+  }
+]
