@@ -12,7 +12,7 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body >
     <?php
       $year = date("Y");
       $showMenu = false;
@@ -57,14 +57,11 @@
   </nav>
   <nav class="cart">
       <div class="cart-div">
-        <button class="cart-toggle" onmouseover="document.querySelector('.cart').style.display = 'none';"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><title>close-rounded</title><path fill="currentColor" d="m12 13.4l-4.9 4.9q-.275.275-.7.275t-.7-.275t-.275-.7t.275-.7l4.9-4.9l-4.9-4.9q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275l4.9 4.9l4.9-4.9q.275-.275.7-.275t.7.275t.275.7t-.275.7L13.4 12l4.9 4.9q.275.275.275.7t-.275.7t-.7.275t-.7-.275z"/></svg></button>
-        <a class="cart-link" href="menu.php?content=home">Home</a>
-        <a class="cart-link" href="menu.php?content=menu">Store</a>
-        <a class="cart-link" href="menu.php?content=account">Account</a>
-        <a class="cart-link" href="menu.php?content=cart">Cart</a>
-        <div class="cart-content">
-        <p>&copy; <?php echo $year; ?> Simple Store.</p>
-      </div>
+        <button class="cart-toggle"onmouseover="document.querySelector('.cart').style.display = 'none';"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><title>close-rounded</title><path fill="currentColor" d="m12 13.4l-4.9 4.9q-.275.275-.7.275t-.7-.275t-.275-.7t.275-.7l4.9-4.9l-4.9-4.9q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275l4.9 4.9l4.9-4.9q.275-.275.7-.275t.7.275t.275.7t-.275.7L13.4 12l4.9 4.9q.275.275.275.7t-.275.7t-.7.275t-.7-.275z"/></svg></button>
+        <h3>Cart</h3>
+        <span class="cart-badge" href="menu.php?content=home">0</span>
+        <p class="cart-message">Your cart is currently empty.</p>
+        <button class="cart-button" onclick="document.querySelector('.cart').style.display = 'none';">Explore Store</button>
        
       </div>
     </div>
