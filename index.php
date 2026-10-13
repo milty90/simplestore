@@ -14,14 +14,14 @@
   </head>
   <body >
     <?php
-      $year = date("Y");
-      $showMenu = false;
-      if (isset($_GET['showMenu'])) {
-        $showMenu = $_GET['showMenu'] === 'true';
-      }
-      if ($showMenu) {
-        echo '<style>.menu { display: block; }</style>';
-      }
+    $year = date("Y");
+    $showMenu = false;
+    if (isset($_GET["showMenu"])) {
+        $showMenu = $_GET["showMenu"] === "true";
+    }
+    if ($showMenu) {
+        echo "<style>.menu { display: block; }</style>";
+    }
     ?>  
     <header class="header">
       <div class="header-div">
@@ -37,7 +37,17 @@
           <a class="header-link" onclick="document.querySelector('.account').style.display = 'block';">Account</a>
           <a class="header-icon" href="menu.php?content=home">
             <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><title>shopping-cart</title><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="m2.05 2.05l1.099-.028a1 1 0 0 1 1.008.815l2.69 14.347A1 1 0 0 0 7.83 18H18"/><path d="M4.563 5h16.435a1 1 0 0 1 .981 1.204l-1.026 6.226A2 2 0 0 1 18.962 14H6.25"/><circle cx="18" cy="20" r="2"/><circle cx="8" cy="20" r="2"/></g></svg></a>
-          <a class="header-link" onmouseover="document.querySelector('.cart').style.display = 'block';">Cart</a>
+          <div class="cart-wrapper">
+            <button class="header-link cart-link" type="button">Cart</button>
+            <div class="cart">
+              <div class="cart-div">
+                <h3>Cart</h3>
+                <span class="cart-badge">0</span>
+                <p class="cart-message">Your cart is currently empty.</p>
+                <button class="cart-button" type="button">Explore Store</button>
+              </div>
+            </div>
+          </div>
           </div>
       </div>
     </header>
@@ -53,32 +63,20 @@
         <p>&copy; <?php echo $year; ?> Simple Store.</p>
       </div>
     </div>
-    </div>
-  </nav>
-  <nav class="cart">
-      <div class="cart-div">
-        <button class="cart-toggle"onmouseover="document.querySelector('.cart').style.display = 'none';"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><title>close-rounded</title><path fill="currentColor" d="m12 13.4l-4.9 4.9q-.275.275-.7.275t-.7-.275t-.275-.7t.275-.7l4.9-4.9l-4.9-4.9q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275l4.9 4.9l4.9-4.9q.275-.275.7-.275t.7.275t.275.7t-.275.7L13.4 12l4.9 4.9q.275.275.275.7t-.275.7t-.7.275t-.7-.275z"/></svg></button>
-        <h3>Cart</h3>
-        <span class="cart-badge" href="menu.php?content=home">0</span>
-        <p class="cart-message">Your cart is currently empty.</p>
-        <button class="cart-button" onclick="document.querySelector('.cart').style.display = 'none';">Explore Store</button>
-       
-      </div>
-    </div>
-  </nav>
   
+  </nav>
     <main class="main">
       <div class="main-div">
         <h2 class="main-title">welcome to simple store</h2>
         <div class="cards-container">
           <?php
-          $jsonData = file_get_contents('products.json');
+          $jsonData = file_get_contents("products.json");
           $products = json_decode($jsonData, true);
           foreach ($products as $product) {
-          $name = $product['name'];
-          $price = $product['price'];
-          $front = $product['images']['front'];
-          include 'card.php';
+              $name = $product["name"];
+              $price = $product["price"];
+              $front = $product["images"]["front"];
+              include "card.php";
           }
           ?>  
         </div>

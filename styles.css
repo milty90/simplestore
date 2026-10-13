@@ -21,6 +21,13 @@ body {
 .header-link {
   display: none;
 }
+.cart-link {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+}
 
 .header-icon {
   display: inline-block;
@@ -32,7 +39,6 @@ body {
 .header-link:hover {
   color: #121212;
   cursor: pointer;
-
   transition: all 0.3s ease;
 }
 .header-div,
@@ -56,14 +62,24 @@ body {
   position: absolute;
   display: none;
 }
+
 .cart {
-  right: 0;
-  position: absolute;
   display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  z-index: 21;
+}
+.cart-wrapper {
+  position: relative;
+}
+.cart-wrapper:hover .cart,
+.cart-wrapper:focus-within .cart {
+  display: block;
 }
 .menu-div {
   right: 0;
-  position: absolute;
+  position: fixed;
   inset: 0.5rem;
   box-sizing: border-box;
   background-color: #808288;
@@ -79,18 +95,14 @@ body {
   gap: 2rem;
 }
 .cart-div {
-  top: 0;
-  z-index: 20;
-  position: absolute;
-  top: 0;
-
   background-color: #f9f9f9;
   border-radius: 0 0 0.5rem 0.5rem;
-
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: min(350px, calc(100vw - 2rem));
   padding: 1rem 2rem 3rem 2rem;
   border: 1px solid #e4e4e7;
   border-top-style: none;
@@ -362,23 +374,6 @@ body {
   .cards-container {
     grid-template-columns: auto auto auto;
   }
-  .cart {
-    max-width: 1100px;
-    position: relative;
-    width: 100%;
-    margin: 0 auto;
-    background-color: aqua;
-    right: 0;
-  }
-  .cart-div {
-    top: 0;
-    right: 0;
-    /* töröld a left: 0 sort */
-    z-index: 20;
-    position: absolute;
-    width: 350px;
-    /* a többi stílus maradhat */
-  }
   .card-image {
     width: 100%;
     height: 480px;
@@ -387,7 +382,6 @@ body {
     border-radius: 0.5rem;
     margin: 0;
   }
-
   .footer-div {
     width: 100%;
     max-width: 1100px;
