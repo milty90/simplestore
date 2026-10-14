@@ -27,14 +27,15 @@
       <div class="header-div">
          <div class="header-left">
           <div class="menu-wrapper" >
-         <button class="header-link menu-link">Menu</button>
-          <a class="header-icon menu-link">
+         <input type="checkbox" id="menu-check" class="menu-check" hidden>
+         <label for="menu-check" class="header-link menu-link">Menu</label>
+          <label for="menu-check" class="header-icon menu-link">
             <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-              <title>menu</title><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5h16M4 12h16M4 19h16"/></svg></a>
+              <title>menu</title><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5h16M4 12h16M4 19h16"/></svg></label>
           
            <div class="menu">
         <div class="menu-div">
-        <button class="menu-toggle" onclick="document.querySelector('.menu').style.display = 'none';"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><title>close-rounded</title><path fill="currentColor" d="m12 13.4l-4.9 4.9q-.275.275-.7.275t-.7-.275t-.275-.7t.275-.7l4.9-4.9l-4.9-4.9q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275l4.9 4.9l4.9-4.9q.275-.275.7-.275t.7.275t.275.7t-.275.7L13.4 12l4.9 4.9q.275.275.275.7t-.275.7t-.7.275t-.7-.275z"/></svg></button>
+        <label for="menu-check" class="menu-toggle"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><title>close-rounded</title><path fill="currentColor" d="m12 13.4l-4.9 4.9q-.275.275-.7.275t-.7-.275t-.275-.7t.275-.7l4.9-4.9l-4.9-4.9q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275l4.9 4.9l4.9-4.9q.275-.275.7-.275t.7.275t.275.7t-.275.7L13.4 12l4.9 4.9q.275.275.275.7t-.275.7t-.7.275t-.7-.275z"/></svg></label>
         <a class="menu-links" href="menu.php?content=home">Home</a>
         <a class="menu-links" href="menu.php?content=menu">Store</a>
         <a class="menu-links" href="menu.php?content=account">Account</a>
