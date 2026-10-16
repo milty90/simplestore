@@ -37,7 +37,7 @@
     "currency": "USD",
     "images": {
       "front": "public/hoodie_top.jpg",
-      "folded": "public/hoodie_folded.jpg",
+      "folded": "public/hoodie_front.jpg",
       "detail": "public/hoodie_detail.jpg"
     }
   },
@@ -65,7 +65,7 @@
     "currency": "USD",
     "images": {
       "front": "public/jacket_front.jpg",
-      "detail": "public/public/jacket_detail.jpg",
+      "detail": "public/jacket_detail.jpg",
       "folded": "public/jacket_folded.jpg"
     }
   },
