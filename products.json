@@ -3,6 +3,12 @@
     "id": 1,
     "sku": "TSHIRT-BLK-01",
     "name": "Classic Black T-Shirt",
+    "size": {
+      "S": "not available",
+      "M": "available",
+      "L": "available",
+      "XL": "available"
+    },
     "category": "Tops",
     "description": "Essential black cotton t-shirt with a modern, clean fit suitable for everyday wear.",
     "price": 24.99,
@@ -17,6 +23,12 @@
     "id": 2,
     "sku": "CAP-BLK-01",
     "name": "Minimalist Black Cap",
+    "size": {
+      "S": "available",
+      "M": "available",
+      "L": "available",
+      "XL": "available"
+    },
     "category": "Accessories",
     "description": "Adjustable black baseball cap made from durable cotton twill.",
     "price": 19.99,
@@ -31,6 +43,12 @@
     "id": 3,
     "sku": "HOODIE-BLK-01",
     "name": "Classic Black Hoodie",
+    "size": {
+      "S": "available",
+      "M": "available",
+      "L": "available",
+      "XL": "available"
+    },
     "category": "Tops",
     "description": "Classic black hoodie made from soft cotton blend with a comfortable fit.",
     "price": 34.99,
@@ -45,6 +63,12 @@
     "id": 4,
     "sku": "SOCK-BLK-01",
     "name": "Cotton Crew Socks Set",
+    "size": {
+      "S": "available",
+      "M": "available",
+      "L": "available",
+      "XL": "available"
+    },
     "category": "Accessories",
     "description": "Comfortable, breathable black cotton crew socks with ribbed cuffs.",
     "price": 12.99,
@@ -59,6 +83,12 @@
     "id": 5,
     "sku": "JCKT-BLK-01",
     "name": "Hooded Technical Jacket",
+    "size": {
+      "S": "available",
+      "M": "available",
+      "L": "available",
+      "XL": "available"
+    },
     "category": "Outerwear",
     "description": "All-weather hooded black jacket featuring water-resistant fabric and full-zip closure.",
     "price": 119.99,
@@ -73,6 +103,13 @@
     "id": 6,
     "sku": "PNT-BLK-01",
     "name": "Slim Fit Black Chinos",
+
+    "size": {
+      "S": "available",
+      "M": "available",
+      "L": "available",
+      "XL": "available"
+    },
     "category": "Bottoms",
     "description": "Versatile black chino pants crafted from stretch-cotton for maximum comfort.",
     "price": 59.99,
@@ -87,6 +124,12 @@
     "id": 7,
     "sku": "BLZ-BLK-01",
     "name": "Tailored Black Blazer",
+    "size": {
+      "S": "available",
+      "M": "available",
+      "L": "not available",
+      "XL": "available"
+    },
     "category": "Outerwear",
     "description": "Classic single-breasted black blazer suitable for smart-casual and formal occasions.",
     "price": 149.99,
@@ -101,6 +144,12 @@
     "id": 8,
     "sku": "BLSE-BLK-01",
     "name": "Minimalist Black Women Blouse",
+    "size": {
+      "S": "not available",
+      "M": "available",
+      "L": "available",
+      "XL": "available"
+    },
     "category": "Tops",
     "description": "Elegant black blouse designed for women, featuring a minimalist style and comfortable fit.",
     "price": 29.99,
@@ -115,6 +164,12 @@
     "id": 9,
     "sku": "CHNS-BLK-01",
     "name": "Black Women Chinos",
+    "size": {
+      "S": "available",
+      "M": "available",
+      "L": "not available",
+      "XL": "available"
+    },
     "category": "Bottoms",
     "description": "Stylish black chinos for women, offering a comfortable fit and versatile style suitable for various occasions.",
     "price": 39.99,
@@ -129,6 +184,12 @@
     "id": 10,
     "sku": "SKRT-BLK-01",
     "name": "Black Women Skirt",
+    "size": {
+      "S": "available",
+      "M": "not available",
+      "L": "available",
+      "XL": "available"
+    },
     "category": "Bottoms",
     "description": "Classic black skirt for women, designed for a comfortable fit and versatile style.",
     "price": 19.99,
@@ -143,6 +204,12 @@
     "id": 11,
     "sku": "DRSS-BLK-01",
     "name": "Black Women Dress",
+    "size": {
+      "S": "available",
+      "M": "available",
+      "L": "not available",
+      "XL": "not available"
+    },
     "category": "Dresses",
     "description": "Elegant black dress for women, designed for a comfortable fit and versatile style.",
     "price": 19.99,
