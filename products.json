@@ -96,5 +96,61 @@
       "detail": "public/blazer_detail.jpg",
       "folded": "public/blazer_folded.jpg"
     }
+  },
+  {
+    "id": 8,
+    "sku": "BLSE-BLK-01",
+    "name": "Minimalist Black Women Blouse",
+    "category": "Tops",
+    "description": "Elegant black blouse designed for women, featuring a minimalist style and comfortable fit.",
+    "price": 29.99,
+    "currency": "USD",
+    "images": {
+      "front": "public/blouse_front.jpg",
+      "detail": "public/blouse_detail.jpg",
+      "folded": "public/blouse_folded.jpg"
+    }
+  },
+  {
+    "id": 9,
+    "sku": "CHNS-BLK-01",
+    "name": "Black Women Chinos",
+    "category": "Bottoms",
+    "description": "Stylish black chinos for women, offering a comfortable fit and versatile style suitable for various occasions.",
+    "price": 39.99,
+    "currency": "USD",
+    "images": {
+      "front": "public/chinos_front.jpg",
+      "detail": "public/chinos_detail.jpg",
+      "folded": "public/chinos_folded.jpg"
+    }
+  },
+  {
+    "id": 10,
+    "sku": "SKRT-BLK-01",
+    "name": "Black Women Skirt",
+    "category": "Bottoms",
+    "description": "Classic black skirt for women, designed for a comfortable fit and versatile style.",
+    "price": 19.99,
+    "currency": "USD",
+    "images": {
+      "front": "public/skirt_front.jpg",
+      "detail": "public/skirt_detail.jpg",
+      "folded": "public/skirt_folded.jpg"
+    }
+  },
+  {
+    "id": 11,
+    "sku": "DRSS-BLK-01",
+    "name": "Black Women Dress",
+    "category": "Dresses",
+    "description": "Elegant black dress for women, designed for a comfortable fit and versatile style.",
+    "price": 19.99,
+    "currency": "USD",
+    "images": {
+      "front": "public/dress_front.jpg",
+      "detail": "public/dress_detail.jpg",
+      "folded": "public/dress_folded.jpg"
+    }
   }
 ]

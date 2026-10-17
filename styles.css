@@ -63,6 +63,7 @@ body {
 .cart {
   display: none;
   position: absolute;
+
   right: -0.5rem;
   z-index: 20;
   padding-top: 1rem;
@@ -263,6 +264,7 @@ body {
   font-size: 1rem;
   font-weight: 400;
   margin: 0.5rem 0 0 0.5rem;
+  text-decoration: none;
   margin-left: 0.2rem;
   text-align: start;
 }
@@ -336,7 +338,8 @@ body {
 @media screen and (min-width: 425px) {
   .main-div {
     align-items: center;
-    width: calc(100vw - 2rem);
+    justify-content: center;
+    width: calc(100vw - 3rem);
   }
   .card {
     margin-bottom: 0;
@@ -354,7 +357,7 @@ body {
 
   .card-image {
     width: 100%;
-    height: 460px;
+    height: auto;
     object-fit: contain;
     border-radius: 4px;
     border-radius: 0.5rem;
@@ -444,6 +447,18 @@ body {
   .cart-div {
     width: min(350px, calc(100vw - 2rem));
   }
+  .card-details {
+    padding: 1rem;
+    background-color: lightgray;
+  }
+  .card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+    text-decoration: none;
+    color: #52525b;
+    background-color: aqua;
+  }
   .product-page {
     display: grid;
     grid-template-columns: 1fr 1.5fr 1fr;
@@ -496,11 +511,11 @@ body {
   }
 
   .product-images {
-    gap: 10rem;
+    gap: 15rem;
   }
   .product-image {
     width: 100%;
-    height: 480px;
+    height: 550px;
     object-fit: contain;
     border-radius: 4px;
     border-radius: 0.5rem;
@@ -518,7 +533,7 @@ body {
   }
   .footer-div {
     width: 100%;
-    max-width: 1440px;
+    max-width: 1200px;
   }
   .footer-text {
     font-size: 0.85rem;
