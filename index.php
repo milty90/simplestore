@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+  <title>Simple Store</title>
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -69,6 +69,7 @@
 
 
       <h1 class="header-title">simple store</h1>
+      <h1 class="header-tagline">Minimalist black clothing</h1>
       <div class="header-right">
         <div class="account-wrapper">
           <a class="header-icon" href="menu.php?content=home"><svg xmlns="http://www.w3.org/2000/svg" width="1em"
