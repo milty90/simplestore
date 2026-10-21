@@ -14,9 +14,9 @@
     "price": 24.99,
     "currency": "USD",
     "images": {
-      "front": "public/tshirt_front.jpg",
-      "detail": "public/tshirt_detail.jpg",
-      "folded": "public/tshirt_folded.jpg"
+      "front": "public/tshirt_front.webp",
+      "detail": "public/tshirt_detail.webp",
+      "folded": "public/tshirt_folded.webp"
     }
   },
   {
@@ -34,9 +34,9 @@
     "price": 19.99,
     "currency": "USD",
     "images": {
-      "front": "public/cap_front.jpg",
-      "detail": "public/cap_detail.jpg",
-      "folded": "public/cap_back.jpg"
+      "front": "public/cap_front.webp",
+      "detail": "public/cap_detail.webp",
+      "folded": "public/cap_back.webp"
     }
   },
   {
@@ -54,9 +54,9 @@
     "price": 34.99,
     "currency": "USD",
     "images": {
-      "front": "public/hoodie_top.jpg",
-      "folded": "public/hoodie_front.jpg",
-      "detail": "public/hoodie_detail.jpg"
+      "front": "public/hoodie_top.webp",
+      "folded": "public/hoodie_front.webp",
+      "detail": "public/hoodie_detail.webp"
     }
   },
   {
@@ -74,9 +74,9 @@
     "price": 12.99,
     "currency": "USD",
     "images": {
-      "front": "public/socks_side.jpg",
-      "detail": "public/socks_detail.jpg",
-      "folded": "public/socks_folded.jpg"
+      "front": "public/socks_side.webp",
+      "detail": "public/socks_detail.webp",
+      "folded": "public/socks_folded.webp"
     }
   },
   {
@@ -94,9 +94,9 @@
     "price": 119.99,
     "currency": "USD",
     "images": {
-      "front": "public/jacket_front.jpg",
-      "detail": "public/jacket_detail.jpg",
-      "folded": "public/jacket_folded.jpg"
+      "front": "public/jacket_front.webp",
+      "detail": "public/jacket_detail.webp",
+      "folded": "public/jacket_folded.webp"
     }
   },
   {
@@ -115,9 +115,9 @@
     "price": 59.99,
     "currency": "USD",
     "images": {
-      "front": "public/pants_front.jpg",
-      "detail": "public/pants_detail.jpg",
-      "folded": "public/pants_folded.jpg"
+      "front": "public/pants_front.webp",
+      "detail": "public/pants_detail.webp",
+      "folded": "public/pants_folded.webp"
     }
   },
   {
@@ -135,9 +135,9 @@
     "price": 149.99,
     "currency": "USD",
     "images": {
-      "front": "public/blazer_front.jpg",
-      "detail": "public/blazer_detail.jpg",
-      "folded": "public/blazer_folded.jpg"
+      "front": "public/blazer_front.webp",
+      "detail": "public/blazer_detail.webp",
+      "folded": "public/blazer_folded.webp"
     }
   },
   {
@@ -155,9 +155,9 @@
     "price": 29.99,
     "currency": "USD",
     "images": {
-      "front": "public/blouse_front.jpg",
-      "detail": "public/blouse_detail.jpg",
-      "folded": "public/blouse_folded.jpg"
+      "front": "public/blouse_front.webp",
+      "detail": "public/blouse_detail.webp",
+      "folded": "public/blouse_folded.webp"
     }
   },
   {
@@ -175,9 +175,9 @@
     "price": 39.99,
     "currency": "USD",
     "images": {
-      "front": "public/chinos_front.jpg",
-      "detail": "public/chinos_detail.jpg",
-      "folded": "public/chinos_folded.jpg"
+      "front": "public/chinos_front.webp",
+      "detail": "public/chinos_detail.webp",
+      "folded": "public/chinos_folded.webp"
     }
   },
   {
@@ -195,9 +195,9 @@
     "price": 19.99,
     "currency": "USD",
     "images": {
-      "front": "public/skirt_front.jpg",
-      "detail": "public/skirt_detail.jpg",
-      "folded": "public/skirt_folded.jpg"
+      "front": "public/skirt_front.webp",
+      "detail": "public/skirt_detail.webp",
+      "folded": "public/skirt_folded.webp"
     }
   },
   {
@@ -215,9 +215,9 @@
     "price": 19.99,
     "currency": "USD",
     "images": {
-      "front": "public/dress_front.jpg",
-      "detail": "public/dress_detail.jpg",
-      "folded": "public/dress_folded.jpg"
+      "front": "public/dress_front.webp",
+      "detail": "public/dress_detail.webp",
+      "folded": "public/dress_folded.webp"
     }
   }
 ]
