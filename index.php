@@ -19,6 +19,21 @@
       echo "User-agent: *\nAllow: /\nSitemap: https://simplestore-production-a495.up.railway.app/sitemap.xml";
       exit();
   }
+  $path = parse_url($_SERVER["REQUEST_URI"], PHP_URL_PATH);
+
+  if ($path === "/sitemap.xml") {
+      $base = "https://simplestore-production-a495.up.railway.app";
+      header("Content-Type: application/xml; charset=UTF-8");
+      echo '<?xml version="1.0" encoding="UTF-8"?>' . "\n";
+      echo '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' .
+          "\n";
+      echo "  <url><loc>$base/</loc></url>\n";
+      for ($i = 1; $i <= 11; $i++) {
+          echo "  <url><loc>$base/index.php?id=$i</loc></url>\n";
+      }
+      echo "</urlset>";
+      exit();
+  }
   ?>
   <?php
   $year = date("Y");

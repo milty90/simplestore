@@ -3,6 +3,7 @@
   <div class="card-content">
     <img
       class="card-image"
+      fetchpriority="high"
       src="<?= htmlspecialchars($front, ENT_QUOTES, "UTF-8") ?>"
       alt="<?= htmlspecialchars($name, ENT_QUOTES, "UTF-8") ?>"
       width="400"
