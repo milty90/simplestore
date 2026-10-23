@@ -1,17 +1,3 @@
-<!doctype html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Simple Store - Minimalist black clothing for everyday wear.">
-  <title>Simple Store</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"></noscript>
-</head>
-
-<body>
   <?php
   $path = parse_url($_SERVER["REQUEST_URI"], PHP_URL_PATH);
   if ($path === "/robots.txt") {
@@ -35,6 +21,20 @@
       exit();
   }
   ?>
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Simple Store - Minimalist black clothing for everyday wear.">
+  <title>Simple Store</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"></noscript>
+</head>
+
+<body>
   <?php
   $year = date("Y");
   $isDetailedView = false;
