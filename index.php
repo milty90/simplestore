@@ -29,7 +29,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Simple Store - Minimalist black clothing for everyday wear.">
   <title>Simple Store</title>
-  <link rel="stylesheet" href="styles.css?<?php echo time(); ?>" fetchpriority="high" />
+  <link rel="stylesheet" href="styles.css" fetchpriority="high" />
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"></noscript>
 </head>
