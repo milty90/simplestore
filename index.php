@@ -16,6 +16,14 @@
 
 <body>
   <?php
+  $path = parse_url($_SERVER["REQUEST_URI"], PHP_URL_PATH);
+  if ($path === "/robots.txt") {
+      header("Content-Type: text/plain");
+      echo "User-agent: *\nAllow: /\nSitemap: https://simplestore-production-a495.up.railway.app/sitemap.xml";
+      exit();
+  }
+  ?>
+  <?php
   $year = date("Y");
   $isDetailedView = false;
   $jsonData = file_get_contents("products.json");
@@ -70,7 +78,7 @@
 
 
       <h1 class="header-title">simple store</h1>
-      <h1 class="header-tagline">Minimalist black clothing</h1>
+      
       <div class="header-right">
         <div class="account-wrapper">
           <a class="header-icon" href="menu.php?content=home"><svg xmlns="http://www.w3.org/2000/svg" width="1em"
@@ -81,7 +89,7 @@
                 <circle cx="12" cy="7" r="4" />
               </g>
             </svg></a>
-          <a class="header-link" onclick="document.querySelector('.account').style.display = 'block';">Account</a>
+          <button class="header-link cart-link" onclick="document.querySelector('.account').style.display = 'block';">Account</button>
         </div>
         <div class="cart-wrapper">
           <button class="header-link cart-link" type="button">Cart</button>

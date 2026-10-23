@@ -21,6 +21,7 @@ body {
   display: none;
 }
 .cart-link,
+.account-link,
 .menu-link {
   padding: 0;
   border: 0;
