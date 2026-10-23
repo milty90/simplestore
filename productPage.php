@@ -36,6 +36,8 @@
     </div>
     <div class="product-images">
       <img class="product-image"
+        width="400px"
+        height="400px"
         src="<?= htmlspecialchars(
             $selectedProduct["images"]["front"],
             ENT_QUOTES,
@@ -48,6 +50,8 @@
         ) ?>"
       >
       <img class="product-image"
+        width="400px"
+        height="400px"
         src="<?= htmlspecialchars(
             $selectedProduct["images"]["detail"],
             ENT_QUOTES,
@@ -60,6 +64,8 @@
         ) ?>"
       >
       <img class="product-image"    
+        width="400px"
+        height="400px"
         src="<?= htmlspecialchars(
             $selectedProduct["images"]["folded"],
             ENT_QUOTES,

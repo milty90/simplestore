@@ -4,10 +4,11 @@
     <img
       class="card-image"
       fetchpriority="high"
+      width="400px"
+      height="400px"
       src="<?= htmlspecialchars($front, ENT_QUOTES, "UTF-8") ?>"
       alt="<?= htmlspecialchars($name, ENT_QUOTES, "UTF-8") ?>"
-      width="400"
-      height="400"
+    
     />
   </div>
 
