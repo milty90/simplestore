@@ -129,6 +129,10 @@
   </header>
 
   <main class="main">
+      <section class="hero">
+        <h1>Simple design, simple life</h1>
+        <p>Discover the perfect blend of minimalism and luxury.</p>
+    </section>
     <div class="main-div">
 
 
