@@ -1,4 +1,3 @@
-
 <a class="card" href="index.php?id=<?= rawurlencode((string) $id) ?>">
   <div class="card-content">
     <img

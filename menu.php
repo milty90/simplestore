@@ -7,7 +7,7 @@
 <body>
 <h1>Menu</h1>
 <?php
-$content = $_GET['content'];
+$content = htmlspecialchars($_GET['content'], ENT_QUOTES, "UTF-8");
 echo "<p>Currently in the $content section</p>\n";
 ?>
 </body>

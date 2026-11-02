@@ -1,5 +1,0 @@
-User-agent: *
-Allow: /
-Disallow: /menu.php?content=cart
-Disallow: /menu.php?content=account
-Sitemap: https://simplestore-production-a495.up.railway.app/sitemap.xml 
