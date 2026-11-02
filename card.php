@@ -2,7 +2,7 @@
   <div class="card-content">
     <img
       class="card-image"
-      <?= $id< 2 ? 'fetchpriority="high"' : 'loading="lazy"' ?>
+      <?= $id< 3? 'fetchpriority="high"' : 'loading="lazy"' ?>
       width="400"
       height="400"
       src="<?= htmlspecialchars($front, ENT_QUOTES, "UTF-8") ?>"
