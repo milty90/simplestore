@@ -1,9 +1,20 @@
 <?php
 
-const API_BASE = 'http://localhost/simplestore/products.php';
+$is_production = getenv('RAILWAY_ENVIRONMENT') || getenv('K_ENVIRONMENT');
+
+define('API_BASE', '');
+
 const BASE_URL = 'https://simplestore-production-a495.up.railway.app';
 
 const CACHE_TTL = 30;
+
+if ($is_production) {
+    
+       define('API_BASE', 'https://simplestore-production-a495.up.railway.app/products.php');
+  } else {
+   
+       define('API_BASE', 'http://localhost/simplestore/products.php');
+  }
 
 function fetch_json(string $path): array{
     $cacheFile = sys_get_temp_dir() . '/shop_' . md5($path) . '.json';
@@ -27,13 +38,11 @@ function fetch_json(string $path): array{
 
     $data = $body !== false ? json_decode($body, true) : null;
    
-
     if ($code === 200 && is_array($data)) {
         file_put_contents($cacheFile, $body, LOCK_EX);
         return ['code' => 200, 'data' => $data];
     }
 
-    // külső szerver nem elérhető: régi cache is jobb a semminél
     if (is_file($cacheFile)) {
         return ['code' => 200, 'data' => json_decode(file_get_contents($cacheFile), true)];
     }
