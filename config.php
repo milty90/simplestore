@@ -1,20 +1,10 @@
 <?php
 
-$is_production = getenv('RAILWAY_ENVIRONMENT') || getenv('K_ENVIRONMENT');
-
-define('API_BASE', '');
+const API_BASE = 'https://simplestore-production-a495.up.railway.app/products.php' ?? 'http://localhost/simplestore/products.php';
 
 const BASE_URL = 'https://simplestore-production-a495.up.railway.app';
 
 const CACHE_TTL = 30;
-
-if ($is_production) {
-    
-       define('API_BASE', 'https://simplestore-production-a495.up.railway.app/products.php');
-  } else {
-   
-       define('API_BASE', 'http://localhost/simplestore/products.php');
-  }
 
 function fetch_json(string $path): array{
     $cacheFile = sys_get_temp_dir() . '/shop_' . md5($path) . '.json';
