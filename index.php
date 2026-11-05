@@ -1,7 +1,25 @@
   <?php
+  require __DIR__ . '/config.php';
+  $year = date("Y");
+  $isDetailedView = false;
   $path = parse_url($_SERVER["REQUEST_URI"], PHP_URL_PATH);
-  $base = "https://simplestore-production-a495.up.railway.app";
+  $base = BASE_URL;
+
+  $r = fetch_json('');
+  $rawProducts = $r['data'] ?? [];
+
+  $selectedProduct = null;
   
+  $products = [];
+  foreach ($rawProducts as $p) {
+      $products[$p['id']] = $p;
+  }
+  
+  $id = filter_input(INPUT_GET, 'id', FILTER_VALIDATE_INT);
+  if ($id && isset($products[$id])) {
+      $selectedProduct = $products[$id];
+  }
+
  if ($path === "/robots.txt") {
     header("Content-Type: text/plain");
     echo "User-agent: *\n";
@@ -16,7 +34,7 @@
     echo '<?xml version="1.0" encoding="UTF-8"?>' . "\n";
     echo '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' . "\n";
     echo "  <url><loc>$base/</loc></url>\n";
-    for ($i = 1; $i <= 11; $i++) {
+    for ($i = 1; $i <= count($products); $i++) {
         echo "  <url><loc>$base/index.php?id=$i</loc></url>\n";
     }
     echo "</urlset>";
@@ -30,31 +48,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Simple Store - Minimalist black clothing for everyday wear.">
-  <title>Simple Store</title>
-  <link rel="preload" as="image" href="public/tshirt_front.webp" fetchpriority="high">
-<style><?php readfile(__DIR__ . "/styles.css"); ?></style>
+  <title><?php echo $selectedProduct['name'] ?? 'Simple Store'; ?> - Simple Store</title>
+<link rel="stylesheet" href="styles.css">
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"></noscript>
 </head>
 
 <body>
-  <?php
-  $year = date("Y");
-  $isDetailedView = false;
-  $jsonData = file_get_contents("products.json");
-  $products = json_decode($jsonData, true);
-
-  $selectedProduct = null;
-
-  if (isset($_GET["id"])) {
-      foreach ($products as $product) {
-          if ((string) $product["id"] === (string) $_GET["id"]) {
-              $selectedProduct = $product;
-              break;
-          }
-      }
-  }
-  ?>
+ 
   <header class="header">
     <div class="header-div">
       <div class="header-left">
@@ -132,10 +133,12 @@
   </header>
 
   <main class="main">
-      <section class="hero">
+    
+      <section class="hero" <?php if ($selectedProduct !== null) echo 'style="display:none;"'; ?>>
         <h1>Simple design, simple life</h1>
         <p>Discover the perfect blend of minimalism and luxury.</p>
-    </section>
+      </section>
+     
     <div class="main-div">
 
 
@@ -148,7 +151,7 @@
 
       <div class="cards-container">
 
-        <?php foreach ($products as $product) {
+        <?php foreach ($rawProducts as $id => $product) {
             $id = $product["id"];
             $name = $product["name"];
             $price = $product["price"];
